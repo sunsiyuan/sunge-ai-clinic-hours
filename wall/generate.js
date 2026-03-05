@@ -139,8 +139,8 @@ function writeHtml(projects) {
   <style>
     :root { --bg: #1a1a1e; --card: #25252c; --text: #e4e4e7; --muted: #71717a; --accent: #a78bfa; }
     * { box-sizing: border-box; }
-    body { font-family: "SF Pro Text", -apple-system, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 1rem; line-height: 1.5; }
-    .wall-header { text-align: center; margin-bottom: 1.5rem; }
+    body { font-family: "SF Pro Text", -apple-system, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 2.5rem 3rem; line-height: 1.5; }
+    .wall-header { text-align: center; margin-top: 0.5rem; margin-bottom: 2.5rem; }
     .wall-header .clinic-logo { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 0.75rem; border: 2px solid rgba(255,255,255,0.08); }
     .wall-header h1 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.35rem; }
     .sub { color: var(--muted); font-size: 0.85rem; margin-bottom: 0; }
@@ -148,7 +148,8 @@ function writeHtml(projects) {
     .card { background: var(--card); border-radius: 12px; padding: 1.25rem; border: 1px solid rgba(255,255,255,0.06); display: flex; flex-direction: column; transition: border-color 0.2s, box-shadow 0.2s; }
     .card:hover { border-color: rgba(255,255,255,0.12); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
     @media (max-width: 768px) {
-      body { padding: 1rem; }
+      body { padding: 1.25rem 1rem; }
+      .wall-header { margin-bottom: 1.75rem; }
       .wall { display: block; column-count: 2; column-gap: 0.75rem; }
       .card { break-inside: avoid; margin-bottom: 0.75rem; padding: 1rem; }
     }
