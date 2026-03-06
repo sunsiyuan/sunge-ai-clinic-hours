@@ -4,7 +4,7 @@ date: 2025-03-06
 project_name: 《过期档案》惊悚故事集
 project_summary: 都市惊悚短篇，AI协作写作。
 project_author: 芋头
-project_link: 
+project_link: https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU5OTgyNTU4NQ==&action=getalbum&album_id=4411443579622064136#wechat_redirect 
 logo: episodes/2025-03-06_yutou/logo.jpg
 show_workshop_on_wall: false
 xiaohongshu_post_title: 用AI写小说，越努力越痛苦？我找到根本原因了
