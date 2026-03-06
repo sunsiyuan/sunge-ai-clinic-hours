@@ -191,7 +191,8 @@ function writeHtml(projects) {
     const repo = base.includes('wall') ? base.replace(/\\/wall.*$/, '') : (base + '../');
     const repoBase = (typeof GHPAGES_BASE !== 'undefined' && GHPAGES_BASE) ? GHPAGES_BASE : repo;
     document.getElementById('wall').innerHTML = projects.map(p => {
-      const logoUrl = p.logo ? (p.logo.startsWith('http') ? p.logo : repoBase + p.logo) : '';
+      const baseSlash = repoBase.replace(/\\/?$/, '') + '/';
+      const logoUrl = p.logo ? (p.logo.startsWith('http') ? p.logo : baseSlash + p.logo.replace(/^\\//, '')) : '';
       const logoEl = logoUrl ? '<img class="logo" src="' + logoUrl + '" alt="" loading="lazy" />' : '<div class="logo placeholder">◆</div>';
       const top = '<div class="card-top">' + logoEl + '<div class="card-name">' + (p.project_name || '—') + '</div></div>';
       const summaryEl = '<div class="card-summary">' + (p.project_summary || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
